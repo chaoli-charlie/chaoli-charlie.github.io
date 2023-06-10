@@ -9,8 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   address: >
-    <p>412-708-8343</p>
-    <p>32 Vassar Street, 32-G934, Cambridge, MA 02139</p>
+    <p>32-G934</p>
+    <p>32 Vassar Street</p>
+    <p>Cambridge, MA 02139</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
