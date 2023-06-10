@@ -17,7 +17,7 @@ rsync -avr --exclude='.git' --exclude='deploy.sh' _site/ .
 # Add, commit, and push the changes
 git add --all
 git commit -m "Deploy site to gh-pages"
-git push origin gh-pages
+git push -f origin gh-pages
 
 # Switch back to the original branch
 git checkout -
