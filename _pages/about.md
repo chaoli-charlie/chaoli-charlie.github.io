@@ -19,9 +19,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Charlie (Chao) Li, a PhD student in Computer Science at Massachusetts Institute of Technology (MIT) advised by Dina Katabi. My research interests include developing Artificial Intelligence Systems for Healthcare, Wireless Communications, and Computer Vision. 
+I am Charlie (Chao) Li, a PhD student in Computer Science at Massachusetts Institute of Technology (MIT) advised by Dina Katabi. My research interests include developing Artificial Intelligence Systems for Healthcare, Computer Vision, and Wireless Communications. 
 
-I obtained my Bachelors in Electrical and Computer Engineering from Carnegie Mellon University, where I graduated top of my department with the prestigious E.M. Williams Award, where I was advised by Swarun Kumar and Nancy Pollard. I also had the chance to serve as the President of Eta Kappa Nu, Sigma Chapter, the Electrical Engineering Honor Chapter of CMU.
+I obtained my Bachelor's degree in Electrical and Computer Engineering from Carnegie Mellon University, graduating at the top of my department and receiving the prestigious E.M. Williams Award. During my time at CMU, I had the privilege of being mentored by Professors Swarun Kumar and Nancy Pollard, and I also served as President of Eta Kappa Nu, Sigma Chapter, the university's Electrical Engineering Honor Society.
 
 <!-- I come from a family of researchers spanning across different fields in science, who inspired me to pursue impactful work in translational research. My family's influence has inspired me to view science research as a necessary social good requiring proper stewardship.  -->
 
