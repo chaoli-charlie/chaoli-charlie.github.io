@@ -4,7 +4,7 @@
     - name: Full Name
       value: Charlie (Chao Li)
     # - name: Date of Birth
-      # value: 14th March 1879
+    #   value: 14th March 1879
     - name: Languages
       value: English, Mandarin (Chinese)
 
@@ -22,10 +22,10 @@
       description:
         - title: Coursework
           contents:
-          - Computer Vision
-          - Natural Language Processing
-          - Computer Networks
-          - Theory of Computation
+            - Computer Vision
+            - Natural Language Processing
+            - Computer Networks
+            - Theory of Computation
     - title: BS, Electrical and Computer Engineering
       institution: Carnegie Mellon University, Pittsburgh, PA, USA
       year: 2019-2022
@@ -33,34 +33,29 @@
         # - Concentration in Digital Signal Processing
         - title: Coursework
           contents:
-          # - Wireless Communications
-          # - Cyber-Physical Systems
-          # - Robotic Manipulation
-          - Deep Learning
-          - Computer Graphics
-          - Advanced Digital Signal Processing
-          - Electromagnetism
+            # - Wireless Communications
+            # - Cyber-Physical Systems
+            # - Robotic Manipulation
+            - Deep Learning
+            - Computer Graphics
+            - Advanced Digital Signal Processing
+            - Electromagnetism
 
 - title: Experience
   type: time_table
   contents:
-
     - title: Machine Learning (PhD Candidate)
       institution: Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science
       year: 2022-
-
     - title: Wireless Technology Research Assistant
       institution: Carnegie Mellon University, Department of Electrical and Computer Engineering
       year: 2021-2022
-    
     - title: Robotics Research Assistant
       institution: Carnegie Mellon University, Robotics Institute
       year: 2019-2022
-
     - title: Deep Learning Research Intern
       institution: Institute for Infocomm Research, A*STAR
       year: 2020-2021
-
     - title: Embedded Systems Intern
       institution: National University of Singapore, Department of Electrical and Computer Engineering
       year: 2020 - 2020
@@ -79,13 +74,13 @@
       items:
         - Wellcome Trust Fellow '23
     - year: 2022
-      items: 
+      items:
         - E.M. Williams Award
         - College Honors
         - University Honors
         - Dean's List (All Semesters)
     - year: 2021
-      items: 
+      items:
         - Finalist for Best Interactive Paper Award (IEEE Humanoids Conference)
         - Highest Scorer in Engineering Category (Meeting of the Minds, Sigma Xi Poster Competition, CMU)
         - Small Undergraduate Research Grants (SURG)
@@ -95,7 +90,7 @@
   type: nested_list
   contents:
     - title: AI for Healthcare
-      items: 
+      items:
         - Long term monitoring healthcare systems
         - Understanding physiological signals from the brain
     - title: Wireless Communication
