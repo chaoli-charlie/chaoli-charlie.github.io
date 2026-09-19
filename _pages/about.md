@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Charlie (Chao) Li, a PhD student in Computer Science at Massachusetts Institute of Technology (MIT) advised by Dina Katabi. My research centers on cross-modality generative modeling, with applications in contactless health monitoring and text-to-image generation. I am a current [MIT HEALS Graduate Fellow](https://heals.mit.edu/graduate-fellowships/) and a former [Wellcome Trust Fellow](https://jclinic.mit.edu/team-member/chao-li/).
+I am Charlie (Chao) Li, a PhD candidate in Computer Science at Massachusetts Institute of Technology (MIT) advised by Dina Katabi. My research centers on cross-modality generative modeling, with applications in contactless health monitoring and visual generation. I am a current [MIT HEALS Graduate Fellow](https://heals.mit.edu/graduate-fellowships/) and a former [Wellcome Trust Fellow](https://jclinic.mit.edu/team-member/chao-li/).
 
 I was formerly a Research Scientist Intern at FAIR, Meta Superintelligence Labs (MSL) and at Meta Recommendation Systems (MRS), studying the intersection between representation learning and text-to-image generative models.
 
