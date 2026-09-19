@@ -129,6 +129,17 @@ blockquote {
   }
 }
 
+// About page bio. Hyphenation keeps justified lines from opening up large
+// word gaps, since the text column is narrowed by the floated profile image.
+
+.bio {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
