@@ -232,6 +232,14 @@ blockquote {
   margin: 0;
 }
 
+.bio {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
