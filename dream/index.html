@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DREAM: Unifying Contrastive and Generative Objectives for Visual Understanding and Text-to-Image Generation (NeurIPS 2026).">
+  <meta name="keywords" content="DREAM, contrastive learning, text-to-image generation, unified model, masked generative modeling, NeurIPS">
+  <meta property="og:title" content="DREAM: Unifying Contrastive and Generative Objectives">
+  <meta property="og:description" content="A single end-to-end model for text-image contrastive learning and text-to-image generation. NeurIPS 2026.">
+  <meta property="og:image" content="https://chaoli-charlie.github.io/dream/static/images/pretraining.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>DREAM: Unifying Contrastive and Generative Objectives</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💭</text></svg>">
+
+  <style>
+    body { font-family: 'Noto Sans', sans-serif; }
+    .publication-title { font-family: 'Google Sans', sans-serif; }
+    .publication-authors { font-family: 'Google Sans', sans-serif; }
+    .publication-authors a { color: hsl(204, 86%, 53%) !important; }
+    .publication-authors a:hover { text-decoration: underline; }
+    .author-block { display: inline-block; }
+    .publication-venue { color: #555; width: fit-content; font-weight: bold; }
+    .publication-links { margin-top: 0.75rem; }
+    .link-block a { margin: 0.35rem 0.15rem; }
+    .dream { font-variant: small-caps; }
+    .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 0.75rem; text-align: justify; }
+    .section-figure { margin: 1.25rem auto 0; }
+    .section-figure img { width: 100%; height: auto; border-radius: 6px; }
+    .highlight-grid .box { height: 100%; text-align: center; }
+    .highlight-grid .stat { font-family: 'Google Sans', sans-serif; font-size: 2rem; font-weight: bold; color: #e08a00; }
+    .tabs li.is-active a { border-bottom-color: #e08a00; color: #e08a00; }
+    .gallery-panel { display: none; }
+    .gallery-panel.is-active { display: block; }
+    pre { background: #f5f5f5; padding: 1.25rem; border-radius: 6px; font-size: 0.85rem; white-space: pre-wrap; }
+    .bibtex-wrap { position: relative; }
+    .copy-btn { position: absolute; top: 0.5rem; right: 0.5rem; }
+    .footer { padding: 2rem 1.5rem; }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+            <span class="dream">DREAM</span>: Unifying Contrastive and Generative Objectives for Visual Understanding and Text-to-Image Generation
+          </h1>
+          <div class="is-size-5 publication-venue mx-auto mb-3">NeurIPS 2026</div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://chaoli-charlie.github.io/">Chao Li</a><sup>1,*</sup>,</span>
+            <span class="author-block">Tianhong Li<sup>1</sup>,</span>
+            <span class="author-block">Sai Vidyaranya Nuthalapati<sup>2</sup>,</span>
+            <span class="author-block">Hong-You Chen<sup>2</sup>,</span>
+            <span class="author-block">Satya Narayan Shukla<sup>2</sup>,</span>
+            <span class="author-block">Jianpeng Cheng<sup>2</sup>,</span>
+            <span class="author-block">Yonghuan Yang<sup>2</sup>,</span>
+            <span class="author-block">Jun Xiao<sup>2</sup>,</span>
+            <span class="author-block">Xiangjun Fan<sup>2</sup>,</span>
+            <span class="author-block">Aashu Singh<sup>2</sup>,</span>
+            <span class="author-block">Dina Katabi<sup>1</sup>,</span>
+            <span class="author-block">Shlok Kumar Mishra<sup>2</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors mt-2">
+            <span class="author-block"><sup>1</sup>MIT CSAIL</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Meta AI</span>
+          </div>
+          <div class="is-size-6 publication-authors has-text-grey">
+            <span class="author-block"><sup>*</sup>Work done at Meta</span>
+          </div>
+
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="https://arxiv.org/pdf/2603.02667" target="_blank" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2603.02667" target="_blank" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <!-- TODO: point to the public repo once released -->
+              <a class="button is-normal is-rounded is-dark" disabled title="Coming soon">
+                <span class="icon"><i class="fab fa-github"></i></span><span>Code (coming soon)</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body pt-0">
+      <figure class="section-figure">
+        <img src="static/images/pretraining.png" alt="DREAM training framework">
+      </figure>
+      <p class="figure-caption has-text-centered">
+        <span class="dream">DREAM</span> trains a single encoder with a text-image contrastive loss and a masked
+        diffusion reconstruction loss. <b>Masking Warmup</b> gradually shifts the masking ratio over training, so
+        both objectives are served at every step.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-2">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Unifying text-image contrastive learning and text-to-image (T2I) generation in a single end-to-end model is
+            challenging because the two objectives demand opposing masking regimes: contrastive alignment needs
+            near-complete visible tokens, while masked generative modeling needs heavy corruption. We introduce
+            <span class="dream">DREAM</span>, a unified framework that resolves this conflict through
+            <b>Masking Warmup</b>, a schedule that shifts the center of the masking distribution over training, so low
+            and high masking ratios coexist at every step. This co-exposure lets a single jointly-trained encoder serve
+            both objectives.
+          </p>
+          <p>
+            The resulting stable optimization unlocks <b>Semantically Aligned Decoding</b> at inference: the text
+            encoder, trained against visual embeddings at all masking ratios, can score partially generated images and
+            select the best trajectory with as little as 12.5% of the image decoded, improving both FID and throughput.
+          </p>
+          <p>
+            <span class="dream">DREAM</span> outperforms its single-objective baselines, CLIP and FLUID: on ImageNet
+            linear-probing (+1.1%), 5-shot transfer (+4.1%), ADE20K segmentation (+1.9%), and NYU depth estimation
+            (+6.25%) over CLIP, and on CC12M FID (+6.2%) over FLUID while maintaining CLIP Score. Together, these gains
+            show that text-image contrastive and generative objectives, when properly unified, are synergistic rather
+            than competing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Highlights</h2>
+    <div class="columns is-multiline highlight-grid">
+      <div class="column is-3"><div class="box"><div class="stat">+1.1%</div><p>ImageNet linear probing over CLIP</p></div></div>
+      <div class="column is-3"><div class="box"><div class="stat">+4.1%</div><p>5-shot transfer over CLIP</p></div></div>
+      <div class="column is-3"><div class="box"><div class="stat">+6.2%</div><p>CC12M FID over FLUID</p></div></div>
+      <div class="column is-3"><div class="box"><div class="stat">12.5%</div><p>of the image decoded is enough to pick the best candidate</p></div></div>
+    </div>
+    <div class="columns is-centered is-vcentered mt-4">
+      <div class="column is-half">
+        <img src="static/images/radar.png" alt="Radar comparison of DREAM against REPA, FLUID, CLIP and MAR" style="width:100%">
+      </div>
+      <div class="column is-half content">
+        <p>
+          <span class="dream">DREAM</span> (yellow) is compared with representation models and T2I generation models trained on CC12M.
+          A single-stage model beats all of them on every axis we measured, discriminative (linear probing, fine-tuning,
+          few-shot, segmentation) and generative (FID, CLIP Score).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+
+    <h3 class="title is-4">Masking Warmup</h3>
+    <div class="content has-text-justified">
+      <p>
+        Contrastive alignment needs images with almost every token visible, but masked generative modeling needs heavy
+        corruption. Images are encoded into continuous tokens with the Stable Diffusion VAE, then randomly masked and
+        dropped. <b>Masking Warmup</b> gradually shifts the center of the masking-ratio distribution over training, so the
+        encoder always sees both low and high masking ratios. The vision encoder is trained contrastively with text. The
+        decoder conditions on T5 text embeddings to predict the masked tokens with a diffusion loss. Text conditioning
+        enters only in the decoder, so the encoder cannot take a text shortcut when learning visual representations.
+      </p>
+    </div>
+
+    <h3 class="title is-4 mt-6">Semantically Aligned Decoding</h3>
+    <figure class="section-figure">
+      <img src="static/images/inference.png" alt="Semantically Aligned Decoding">
+    </figure>
+    <p class="figure-caption">
+      The model starts <i>K</i> candidate generations in parallel and partially decodes each one to an intermediate step.
+      The jointly trained encoder scores each candidate by comparing its visual embedding with the prompt embedding.
+      Only the top-scoring candidate is fully decoded. External CLIP rerankers are trained only on fully visible images,
+      so they have to wait for complete images. <span class="dream">DREAM</span> can pick a candidate with as little as 12.5% of the image generated.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+
+    <div class="columns">
+      <div class="column">
+        <h3 class="title is-5">Beating CLIP across masking ratios</h3>
+        <img src="static/images/pareto_plot.png" alt="Zero-shot accuracy across masking ratios" style="width:100%">
+        <p class="figure-caption">
+          Zero-shot accuracy of CLIP, CLIP with masking warmup (CLIP-M), and <span class="dream">DREAM</span> across masking
+          ratios. <span class="dream">DREAM</span> beats CLIP at the masking levels shaded in green.
+        </p>
+      </div>
+      <div class="column">
+        <h3 class="title is-5">Scaling</h3>
+        <img src="static/images/scaling.png" alt="Scaling DREAM across model sizes" style="width:100%">
+        <p class="figure-caption">
+          <span class="dream">DREAM</span> at different model sizes (B/L/H/G). Top: ImageNet linear probing. Bottom: CC12M FID.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="title is-4 mt-6">Effect of Semantically Aligned Decoding</h3>
+    <figure class="section-figure">
+      <img src="static/images/semantic_decoding.jpg" alt="Generations with and without Semantically Aligned Decoding" loading="lazy">
+    </figure>
+    <p class="figure-caption">Images generated by <span class="dream">DREAM</span> with and without Semantically Aligned Decoding (SD).</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Text-to-Image Samples</h2>
+    <div class="tabs is-centered" id="gallery-tabs">
+      <ul>
+        <li class="is-active" data-target="grid-large"><a>DREAM-L (0.57B)</a></li>
+        <li data-target="grid-huge"><a>DREAM-H (1.1B)</a></li>
+        <li data-target="grid-giant"><a>DREAM-G (2.4B)</a></li>
+      </ul>
+    </div>
+    <div id="grid-large" class="gallery-panel is-active"><img src="static/images/grid_large.jpg" alt="DREAM-L samples" loading="lazy" style="width:100%"></div>
+    <div id="grid-huge" class="gallery-panel"><img src="static/images/grid_huge.jpg" alt="DREAM-H samples" loading="lazy" style="width:100%"></div>
+    <div id="grid-giant" class="gallery-panel"><img src="static/images/grid_giant.jpg" alt="DREAM-G samples" loading="lazy" style="width:100%"></div>
+    <p class="figure-caption has-text-centered">Generated from CC12M captions with CFG = 5.0.</p>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <div class="bibtex-wrap">
+      <button class="button is-small copy-btn" id="copy-bib"><span class="icon"><i class="far fa-copy"></i></span><span>Copy</span></button>
+<pre><code id="bibtex">@inproceedings{li2026dream,
+  title     = {Unifying Contrastive and Generative Objectives for Visual Understanding and Text-to-Image Generation},
+  author    = {Li, Chao and Li, Tianhong and Nuthalapati, Sai Vidyaranya and Chen, Hong-You and Shukla, Satya Narayan and Cheng, Jianpeng and Yang, Yonghuan and Xiao, Jun and Fan, Xiangjun and Singh, Aashu and Katabi, Dina and Mishra, Shlok Kumar},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026}
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8 content has-text-centered is-size-7">
+        <p>
+          This page uses the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>,
+          adapted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          Licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+        </p>
+        <p><a href="https://chaoli-charlie.github.io/">← Back to Chao Li's homepage</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('#gallery-tabs li').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('#gallery-tabs li').forEach(function (t) { t.classList.remove('is-active'); });
+      document.querySelectorAll('.gallery-panel').forEach(function (p) { p.classList.remove('is-active'); });
+      tab.classList.add('is-active');
+      document.getElementById(tab.dataset.target).classList.add('is-active');
+    });
+  });
+  document.getElementById('copy-bib').addEventListener('click', function () {
+    var btn = this;
+    navigator.clipboard.writeText(document.getElementById('bibtex').innerText).then(function () {
+      btn.querySelector('span:last-child').textContent = 'Copied!';
+      setTimeout(function () { btn.querySelector('span:last-child').textContent = 'Copy'; }, 1500);
+    });
+  });
+</script>
+</body>
+</html>

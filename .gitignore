@@ -9,3 +9,6 @@ _site
 Gemfile.lock
 vendor
 
+
+# Private reviewer feedback
+open_review.pdf
