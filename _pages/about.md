@@ -23,7 +23,7 @@ I am Charlie (Chao) Li, a PhD candidate in Computer Science at Massachusetts Ins
 
 I was formerly a Research Scientist Intern at FAIR, Meta Superintelligence Labs (MSL) and at Meta Recommendation Systems (MRS), studying the intersection between representation learning and text-to-image generative models.
 
-I obtained my Bachelor's degree in Electrical and Computer Engineering from Carnegie Mellon University, graduating at the top of my department and receiving the E.M. Williams Award. During my time at CMU, I had the privilege of being mentored by Professors [Swarun Kumar](https://swarunkumar.com/) and [Nancy Pollard](https://www.cs.cmu.edu/~nsp/), and I also served as President of Eta Kappa Nu, Sigma Chapter, the university's Electrical Engineering Honor Society.
+I obtained my Bachelor's degree in Electrical and Computer Engineering from Carnegie Mellon University, graduating at the top of my department and receiving the E.M. Williams Award. During my time at CMU, I had the privilege of being mentored by Professors [Swarun Kumar](https://swarunkumar.com/) and [Nancy Pollard](https://www.cs.cmu.edu/~nsp/), and I also served as [President of Eta Kappa Nu, Sigma Chapter](https://web.archive.org/web/20220627110823/http://hkn.ece.cmu.edu/index.php?location=mem), the university's Electrical Engineering Honor Society.
 
 <!-- I come from a family of researchers spanning across different fields in science, who inspired me to pursue impactful work in translational research. My family's influence has inspired me to view science research as a necessary social good requiring proper stewardship.  -->
 
