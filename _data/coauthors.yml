@@ -1,34 +1,42 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Co-author homepages: names in _bibliography/papers.bib that match an entry here are linked.
+# Keys are last names; firstname lists the spellings used in the bib file.
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Katabi":
+  - firstname: ["Dina"]
+    url: https://people.csail.mit.edu/dina/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Li":
+  - firstname: ["Tianhong"]
+    url: https://www.tianhongli.me/
 
-"Bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Nuthalapati":
+  - firstname: ["Sai Vidyaranya", "Sai"]
+    url: https://scholar.google.com/citations?user=ao31FtAAAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Chen":
+  - firstname: ["Hong-You"]
+    url: https://sites.google.com/view/hongyouc/about-me
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Shukla":
+  - firstname: ["Satya Narayan", "Satya"]
+    url: https://satyanshukla.github.io/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Cheng":
+  - firstname: ["Jianpeng"]
+    url: https://scholar.google.com/citations?user=51FYPYsAAAAJ
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Yang":
+  - firstname: ["Yonghuan"]
+    url: https://scholar.google.com/citations?user=Mlu6Gl8AAAAJ
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Xiao":
+  - firstname: ["Jun"]
+    url: https://scholar.google.com/citations?user=F885HfIAAAAJ
+
+"Singh":
+  - firstname: ["Aashu"]
+    url: https://scholar.google.com/citations?user=Xb0a3BcAAAAJ
+
+"Mishra":
+  - firstname: ["Shlok Kumar", "Shlok"]
+    url: https://shlokk.github.io/shlokmishra.github.io/
