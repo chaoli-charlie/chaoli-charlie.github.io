@@ -49,6 +49,10 @@ layout: default
     {% if page.news and site.announcements.enabled -%}
       <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Latest News</a></h2>
       {%- include news.html limit=true %}
+      {%- assign news_count = site.news | size -%}
+      {%- if site.announcements.limit and news_count > site.announcements.limit %}
+      <p class="news-more" style="text-align: right; font-size: 0.9rem; margin-top: -0.5rem;"><a href="{{ '/news/' | relative_url }}">All news &rarr;</a></p>
+      {%- endif %}
     {%- endif %}
 
     <!-- Latest posts -->
