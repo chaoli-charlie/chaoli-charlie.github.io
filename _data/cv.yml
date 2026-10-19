@@ -15,11 +15,14 @@
       institution: Massachusetts Institute of Technology, Cambridge, MA, USA
       year: 2022-
       description:
+        - "Advisor: Prof. Dina Katabi"
+        - Doctoral candidate since June 2026
         - Concentration in Artificial Intelligence and Machine Learning
     - title: MS, Electrical Engineering and Computer Science
       institution: Massachusetts Institute of Technology, Cambridge, MA, USA
       year: 2022-2024
       description:
+        - "Thesis: Automatic Sleep Assessment from Nocturnal Breathing and Its Applications for Contactless Monitoring"
         - title: Coursework
           contents:
             - Computer Vision
@@ -44,8 +47,16 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Machine Learning (PhD Candidate)
-      institution: Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science
+    - title: Research Scientist Intern
+      institution: FAIR, Meta Superintelligence Labs (MSL), Menlo Park, CA
+      year: 2026-
+    - title: Research Scientist Intern
+      institution: Meta Recommendation Systems (MRS), Menlo Park, CA
+      year: 2025
+      description:
+        - Unified representation learning and text-to-image generation in a single pretraining framework (DREAM, NeurIPS 2026)
+    - title: PhD Candidate
+      institution: MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)
       year: 2022-
     - title: Wireless Technology Research Assistant
       institution: Carnegie Mellon University, Department of Electrical and Computer Engineering
@@ -54,11 +65,14 @@
       institution: Carnegie Mellon University, Robotics Institute
       year: 2019-2022
     - title: Deep Learning Research Intern
-      institution: Institute for Infocomm Research, A*STAR
+      institution: Institute for Infocomm Research (I2R), A*STAR, Singapore
       year: 2020-2021
     - title: Embedded Systems Intern
       institution: National University of Singapore, Department of Electrical and Computer Engineering
-      year: 2020 - 2020
+      year: 2020
+    - title: Magnetic Storage Research Intern
+      institution: Institute of Materials Research and Engineering (IMRE), A*STAR, Singapore
+      year: 2019
 
 # - title: Open Source Projects
 #   type: time_table
@@ -70,32 +84,62 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2024
+    - year: 2026
       items:
-        - Wellcome Trust Fellow '23
+        - MIT HEALS Graduate Fellow (2026-2027)
+    - year: 2023
+      items:
+        - Wellcome Trust Fellow, MIT Jameel Clinic
     - year: 2022
       items:
-        - E.M. Williams Award
-        - College Honors
-        - University Honors
+        - E.M. Williams Award, Department of Electrical and Computer Engineering, CMU
+        - Honors in Research, College of Engineering, CMU
+        - College Honors and University Honors, CMU
         - Dean's List (All Semesters)
     - year: 2021
       items:
-        - Finalist for Best Interactive Paper Award (IEEE Humanoids Conference)
+        - Finalist, Best Interactive Paper Award (IEEE-RAS Humanoids 2020)
         - Highest Scorer in Engineering Category (Meeting of the Minds, Sigma Xi Poster Competition, CMU)
-        - Small Undergraduate Research Grants (SURG)
+        - Small Undergraduate Research Grant (SURG)
         - Summer Undergraduate Research Fellowship (SURF)
 
-- title: Academic Interests
+- title: Leadership
+  type: time_table
+  contents:
+    - title: President, Eta Kappa Nu (HKN), Sigma Chapter
+      institution: Carnegie Mellon University (Electrical and Computer Engineering Honor Society)
+      year: 2021-2022
+
+- title: Talks
+  type: time_table
+  contents:
+    - title: "Guest Lecture: DREAM: Unifying Contrastive and Generative Objectives for Visual Understanding and Text-to-Image Generation"
+      institution: "CAP 6938: Special Topics (AI Knowledge Systems), University of Central Florida"
+      year: 2026
+    - title: "Poster: Physiology as Language: Translating Respiration to EEG during Sleep"
+      institution: International Conference on Machine Learning (ICML 2026), Seoul, South Korea
+      year: 2026
+    - title: "SoftTouch: A Sensor Placement Framework for Soft Robotic Hands"
+      institution: Meeting of the Minds, Carnegie Mellon University
+      year: 2022
+    - title: "The Elliott and Connolly Benchmark: A Test for Evaluating the In-Hand Dexterity of Robot Hands"
+      institution: Meeting of the Minds, Carnegie Mellon University
+      year: 2021
+    - title: "Stabilization of Zero-Field Skyrmions in Synthetic Antiferromagnetic Multilayers"
+      institution: APS March Meeting
+      year: 2021
+
+- title: Research Interests
   type: nested_list
   contents:
-    - title: AI for Healthcare
+    - title: Generative modeling
       items:
-        - Long term monitoring healthcare systems
-        - Understanding physiological signals from the brain
-    - title: Wireless Communication
+        - Unifying representation learning and text-to-image generation
+        - Cross-modality generation between physiological signals
+    - title: AI for health
       items:
-        - Localization and Object Detection
+        - Contactless, long-term health monitoring
+        - Sleep and neurological biomarkers from physiological signals
 
 - title: Other Interests
   type: list
