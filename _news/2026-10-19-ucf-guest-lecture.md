@@ -1,0 +1,8 @@
+---
+layout: post
+date: 2026-10-19 12:00:00-0400
+inline: true
+related_posts: false
+---
+
+Gave a guest lecture on [DREAM](https://chaoli-charlie.github.io/dream/) at the [University of Central Florida](https://ucf.simplesyllabus.com/en-US/doc/5x63tl7o0). Thanks to [Xuanming Cui](https://xuanmingcui.github.io/) for the invitation.
