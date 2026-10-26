@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am Charlie (Chao) Li, a PhD candidate in Computer Science at Massachusetts Institute of Technology (MIT) advised by [Dina Katabi](https://people.csail.mit.edu/dina/). My research centers on cross-modality generative modeling, with applications in contactless health monitoring and visual generation. I am a current [MIT HEALS Graduate Fellow](https://heals.mit.edu/graduate-fellowships/) and a former [Wellcome Trust Fellow](https://jclinic.mit.edu/team-member/chao-li/).
 
-I was formerly a Research Scientist Intern at FAIR, Meta Superintelligence Labs (MSL) and at Meta Recommendation Systems (MRS), studying the intersection between representation learning and text-to-image generative models.
+I am currently a Research Scientist Intern at FAIR, Meta Superintelligence Labs (MSL), and was previously a Research Scientist Intern at Meta Recommendation Systems (MRS), studying the intersection between representation learning and text-to-image generative models.
 
 I obtained my Bachelor's degree in Electrical and Computer Engineering from Carnegie Mellon University, graduating at the top of my department and receiving the E.M. Williams Award. During my time at CMU, I had the privilege of being mentored by Professors [Swarun Kumar](https://swarunkumar.com/) and [Nancy Pollard](https://www.cs.cmu.edu/~nsp/), and I also served as [President of Eta Kappa Nu, Sigma Chapter](https://web.archive.org/web/20220627110823/http://hkn.ece.cmu.edu/index.php?location=mem), the university's Electrical Engineering Honor Society.
 
